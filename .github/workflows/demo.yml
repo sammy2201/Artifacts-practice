@@ -44,7 +44,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get artifacts
-        uses: actions/download-artiact@v3
+        uses: actions/download-artifact@v3
         with:
           name: dist-files #   use same name when created the artifact
       - name: Output
