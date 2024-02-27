@@ -47,6 +47,8 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: dist-files #   use same name when created the artifact
+      - name: output the output
+        run: echo "${{needs.build.outputs.scriptfile}}"
       - name: Output
         run: ls
       - name: Deploy
